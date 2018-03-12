@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.javajeff.tsepochka.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="140dp"
+        android:text="Новости"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="visible"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Новости"
+        app:titleTextColor="#FFFFFF"/>
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_main"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:layout_marginTop="55dp"
+            android:background="#F5F5F5" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_main"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/progress_main"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="300dp" />
+
+    <client.yalantis.com.foldingtabbar.FoldingTabBar
+        android:id="@+id/folding_tab_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:backgroundTint="#0CD3D9"
+        app:menu="@menu/menu_main"
+        app:selectionColor="@color/colorPrimary" />
+
+    <!--<client.yalantis.com.foldingtabbar.FoldingTabBar-->
+        <!--android:id="@+id/folding_tab_bar_2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerInParent="false"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginBottom="@dimen/text_margin"-->
+        <!--app:menu="@menu/menu_main_2"-->
+        <!--app:selectionColor="@color/colorPrimary"-->
+        <!--app:mainImage="@drawable/ic_action_plus">-->
+
+    <!--</client.yalantis.com.foldingtabbar.FoldingTabBar>-->
+
+</RelativeLayout>

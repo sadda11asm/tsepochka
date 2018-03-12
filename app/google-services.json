@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "510051547668",
+    "firebase_url": "https://tsepochka-backend.firebaseio.com",
+    "project_id": "tsepochka-backend",
+    "storage_bucket": "tsepochka-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510051547668:android:4256d03db077d8f7",
+        "android_client_info": {
+          "package_name": "ca.javajeff.tsepochka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510051547668-lvfjgtjhafusicec4ol9gqrr2c96mhbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ca.javajeff.tsepochka",
+            "certificate_hash": "7f7d68cb9f3ce33e6b915c9aa1cb79eeb474dbba"
+          }
+        },
+        {
+          "client_id": "510051547668-tqasmknnpkbi9rvt08rfeef76up4g005.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAm6HdnICr3eHCpcGj2Z5bNiQSL4qLwzo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510051547668-tqasmknnpkbi9rvt08rfeef76up4g005.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "510051547668-h2pro51piiagea1t7cc5atrlgd7eq8us.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dadsoul.Tsepochka"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
