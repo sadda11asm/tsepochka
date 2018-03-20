@@ -95,4 +95,5 @@
     </string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="saved_preferences">preferred_categories</string>
+    <string name="my_news">Мои Новости</string>
 </resources>

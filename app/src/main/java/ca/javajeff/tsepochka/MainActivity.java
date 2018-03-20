@@ -1,6 +1,7 @@
 package ca.javajeff.tsepochka;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -71,10 +72,20 @@ public class MainActivity extends AppCompatActivity implements ApiAdapter.ApiAda
 
         FoldingTabBar tabBar = (FoldingTabBar) findViewById(R.id.folding_tab_bar);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        fab.setOnClickListener(new FloatingActionButton.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent intent = new Intent(context, CategoriesActivity.class);
+                context.startActivity(intent);
+            }
+        });
         tabBar.setOnFoldingItemClickListener(new FoldingTabBar.OnFoldingItemSelectedListener() {
             @Override
             public boolean onFoldingItemSelected(@NotNull MenuItem menuItem) {
-                Toast.makeText(MainActivity.this, "Item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Will be available soon", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -82,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements ApiAdapter.ApiAda
         tabBar.setOnMainButtonClickListener(new FoldingTabBar.OnMainButtonClickedListener() {
             @Override
             public void onMainButtonClicked() {
-                Toast.makeText(MainActivity.this, "Main", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Will be available soon", Toast.LENGTH_SHORT).show();
             }
         });
 

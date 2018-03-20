@@ -2,24 +2,17 @@ package ca.javajeff.tsepochka;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Саддам on 03.02.2018.
@@ -92,12 +85,28 @@ public class ApiAdapter extends RecyclerView.Adapter<ApiAdapter.ApiAdapterViewHo
     }
 
     @Override
-    public void onBindViewHolder(ApiAdapterViewHolder holder, int position) {
+    public void onBindViewHolder(ApiAdapterViewHolder holder, final int position) {
         String info= mInfoData.get(position);
         String date = mDateData.get(position);
         String image = mImageData.get(position);
         Log.v("element", info);
         holder.infoView.setText(info);
+        holder.infoView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                int adapterPosition = position;
+                final Intent intent;
+                intent = new Intent(context, ScrollingActivity.class);
+                intent.putExtra("text",mTextData.get(adapterPosition));
+                intent.putExtra("date", mDateData.get(adapterPosition));
+                intent.putExtra("title", mInfoData.get(adapterPosition));
+                intent.putExtra("image", mImageData.get(adapterPosition));
+                intent.putExtra("source", mSourceData.get(adapterPosition));
+                context.startActivity(intent);
+                mClickHandler.onClick(String.valueOf(adapterPosition));
+            }
+        });
         holder.dateView.setText(date);
 
         Picasso.with(context).load(image).resize(342,180).centerCrop().into(holder.imageView);

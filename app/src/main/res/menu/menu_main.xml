@@ -7,18 +7,18 @@
         android:icon="@drawable/newspaper"
         android:title="Nearby"/>
 
-    <item
-        android:id="@+id/ftb_menu_new_chat"
-        android:icon="@drawable/menu"
-        android:title="Chat"/>
+    <!--<item-->
+        <!--android:id="@+id/ftb_menu_new_chat"-->
+        <!--android:icon="@drawable/menu"-->
+        <!--android:title="Chat"/>-->
 
     <item
         android:id="@+id/ftb_menu_profile"
         android:icon="@drawable/menu"
         android:title="Profile"/>
 
-    <item
-        android:id="@+id/ftb_menu_settings"
-        android:icon="@drawable/newspaper"
-        android:title="Settings"/>
+    <!--<item-->
+        <!--android:id="@+id/ftb_menu_settings"-->
+        <!--android:icon="@drawable/newspaper"-->
+        <!--android:title="Settings"/>-->
 </menu>

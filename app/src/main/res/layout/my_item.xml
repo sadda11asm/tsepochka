@@ -22,58 +22,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/date_item"
-            android:layout_width="0dp"
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
-            android:paddingLeft="4dp"
-            android:text="January 23, 2018"
-            android:textSize="13sp"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_item"
-            android:layout_marginStart="4dp" />
-
-        <ImageView
-            android:id="@+id/image_item"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/text_item"
-            android:layout_width="356dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/category_item"
+            android:layout_width="232dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginRight="4dp"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
-            android:clickable="true"
+            android:layout_marginTop="1dp"
             android:contextClickable="true"
             android:elevation="3dp"
-            android:gravity="top|center"
+            android:gravity="center"
             android:paddingLeft="8dp"
             android:paddingRight="2dp"
-            android:text="Blockhain has dropped by 2000$"
-            android:textAlignment="viewStart"
+            android:text="ICO"
+            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#002222"
             android:textSize="20sp"
-            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_item" />
+            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
 

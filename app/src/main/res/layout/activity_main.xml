@@ -10,17 +10,17 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/toolbar"
         android:elevation="4dp"
         android:gravity="center_vertical|center_horizontal"
-        android:paddingLeft="140dp"
+        android:paddingLeft="138dp"
         android:text="Новости"
         android:textAlignment="center"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         android:visibility="visible"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Новости"
-        app:titleTextColor="#FFFFFF"/>
+        app:titleTextColor="@color/colorPrimary" />
 
     <!--<android.support.design.widget.AppBarLayout-->
         <!--android:layout_width="match_parent"-->
@@ -68,14 +68,28 @@
 
     <client.yalantis.com.foldingtabbar.FoldingTabBar
         android:id="@+id/folding_tab_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/text_margin"
         android:backgroundTint="#0CD3D9"
         app:menu="@menu/menu_main"
         app:selectionColor="@color/colorPrimary" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="550dp"
+        android:layout_toRightOf="@id/folding_tab_bar"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="4dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/list_white" />
 
     <!--<client.yalantis.com.foldingtabbar.FoldingTabBar-->
         <!--android:id="@+id/folding_tab_bar_2"-->
